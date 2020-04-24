@@ -1,10 +1,11 @@
 # Factorial
 
-def silnia(n):
-    for i in range(1, n):
-        if n == 0:
-            a = 1
-    a = i * (i +1)
-    return a
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    elif n > 1:
+        factorial_number = 1
+        for i in range(2, n+1):
+            factorial_number *= i
 
-print(silnia(3))
+        return factorial_number
